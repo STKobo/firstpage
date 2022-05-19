@@ -1,0 +1,94 @@
+
+.container {
+    display: grid;
+    height: 90vh;
+    /* 1vh représente 1% de la fenetre courante de hauteurn pour avoir un élément à la hauteur de votre fenêtre, mettre à 100  */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* fr représente une fraction de l'espace disponible dans le conteneur de la grille. */
+    grid-template-rows: 50px 50px 150px 300px;
+    /* 0.5 0.5 2 2 */
+    grid-template-areas: 
+    "main main main main"
+    "sidebar content1 content1 content1"
+    "sidebar content2 content2 content2"
+    
+    ;
+    grid-gap : 20px;
+    
+    color : #4E688A;
+}
+
+nav {
+    height: 50px;
+    text-align: center;
+}
+
+
+main {
+    background-color: #FFFFFF;
+    grid-area: main;
+    box-shadow: 5px 5px 5px #e3e3e3;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+
+#sidebar {
+    background-color: #FFFFFF;
+    grid-area: sidebar;
+    box-shadow: 5px 5px 5px #e3e3e3;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#content1 {
+    background-color: #FFFFFF;
+    grid-area: content1;
+    box-shadow: 5px 5px 5px #e3e3e3;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#content2 {
+    background-color: #FFFFFF;
+    grid-area: content2;
+    box-shadow: 5px 5px 5px #e3e3e3;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#sidebar2 {
+    background-color: #FFFFFF;
+    
+    width : 1fr;
+    /* pas réussi à mettre cette carte a à la même width que celle qui la précède */
+    box-shadow: 5px 5px 5px #e3e3e3;
+    padding-left: 20px;
+    padding-top: 10px;
+   
+}
+
+
+
+/* Positionnement du tableau dans la carte */
+.existing {
+    height: 150px;
+    padding-top: 10px;
+
+}
+
+/* Changement de l'emplacement des listes */ 
+
+.resources-list {
+    width : 300px;
+    height : 300px;
+    padding-top : 10px;
+    padding-right: 20px;
+}
+
+.assets-list {
+    width : 300px;
+    height : 300px;
+    padding-top : 10px;
+    padding-right: 20px;
+}
